@@ -9,6 +9,11 @@ import org.testcontainers.utility.DockerImageName;
 @TestConfiguration
 public class TestContainerConfiguration {
 
+
+    static {
+        System.setProperty("api.version", "1.40");
+    }
+
     @Bean
     @ServiceConnection
     PostgreSQLContainer<?> postgresContainer() {

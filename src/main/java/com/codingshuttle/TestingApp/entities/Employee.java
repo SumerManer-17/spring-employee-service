@@ -18,10 +18,9 @@ public class Employee {
     @Column(unique = true)
     private String email;
 
-    private String fullName;
+    private String name;
 
     private Long salary;
 
-    @ManyToOne
-    private Department department;
+
 }
